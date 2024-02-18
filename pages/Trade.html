@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/output.css">
+    <title>Grailswap | Import</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="16x16">
+
+</head>
+
+<body class="font-mono h-screen bg-[#101010]">
+    <div class="flex h-full flex-col justify-between">
+        <div class="w-[100%] px-6 lg:px-8 sticky top-0 left-0 border-b border-white/30 z-50 bg-[#101010] bakbak">
+            <nav class="mx-auto max-w-7xl flex items-center justify-between py-3" aria-label="Global">
+                <div class="flex w-full lg:w-auto lg:flex-1 justify-between items-center lg:justify-normal gap-6">
+                    <a class="font-marcellus -m-1.5 p-1.5 flex justify-center items-center gap-2" href="./index.html">
+                        <img alt="logo" loading="lazy" width="110" height="40" decoding="async" data-nimg="1"
+                            class="w-12 h-12" style="color:transparent" src="../images/logo.svg">
+                        <p class="__className_e1c10e uppercase text-normal text-white">Grailswap</p>
+                    </a>
+                    <div class="flex lg:hidden">
+                        <button type="button"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+                            <span class="sr-only">Open main menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true" class="h-6 w-6 stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex lg:gap-x-6">
+                        <a class="text-normal font-normal leading-6 text-white hover:text-yellow-500 cursor-pointer text-shadow transition-all duration-300"
+                            href="./index.html">Home</a>
+                        <a class="text-normal font-normal leading-6 text-white hover:text-yellow-500 cursor-pointer text-shadow transition-all duration-300"
+                            href="./Swap.html">Trade</a>
+                        <a class="text-normal font-normal leading-6 text-white hover:text-yellow-500 cursor-pointer text-shadow transition-all duration-300"
+                            href="./Trade.html">Import</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex">
+                    <div class="flex">
+                        <input type="text" id="search"
+                            class="block w-full rounded-bl-lg rounded-tl-lg border-0 py-3 px-4 pl-8 text-white shadow-sm bg-zinc-900 placeholder:text-gray-400 sm:leading-6 outline-none text-base"
+                            placeholder="Type the trade code" name="search" value="">
+                        <button class="rounded-br-lg rounded-tr-lg py-3 px-4 bg-zinc-900 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true" class="w-5 h-5 fill-white">
+                                <path fill-rule="evenodd"
+                                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                    clip-rule="evenodd">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end ">
+                    <div class="wallet-adapter-dropdown">
+                        <button
+                            class="wallet-adapter-button wallet-adapter-button-trigger bg-yellow-500 cursor-pointer rounded px-3 py-1 shadow-white text-white"
+                            tabindex="0" type="button" style="pointer-events: auto;">
+                            Connect Wallet
+                        </button>
+                        <!-- <ul aria-label="dropdown-list" class="wallet-adapter-dropdown-list false" role="menu">
+                            <li class="wallet-adapter-dropdown-list-item" role="menuitem">Change wallet</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </nav>
+            <div
+                style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none">
+            </div>
+        </div>
+        <main class="h-full">
+            <div class="max-w-7xl mx-auto h-full text-white flex flex-col items-center justify-center">
+                <div class="text-[20px] md:text-[30px] lg:text-[55px] uppercase font-bold lg:leading-[70px] text-center"
+                    style="opacity: 1; transform: none;">
+                    The
+                    <span class="text-yellow-500">Future</span>
+                    of
+                    <span class="text-yellow-500"> Secure</span>
+                    and Rapid Swaps
+                </div>
+                <div class="w-full md:w-[60%] mx-auto text-center lg:text-[16px] py-3"
+                    style="opacity: 1; transform: none;">
+                    Committed to transparent asset exchanges. Keeping changes low
+                    and clarity high. No invisible charges. Equitable rates. Expectations met, no surprises.
+                </div>
+                <div class="flex items-center justify-center w-full md:w-3/5 mx-auto mt-8"
+                    style="opacity:1;transform:translateY(24px) translateZ(0)">
+                    <form class="w-full">
+                        <label for="load" class="mb-2 text-sm font-medium text-white sr-only dark:text-white">
+                            Load
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none z-10">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <input type="load" id="load"
+                                class="block w-full p-4 pl-10 text-sm text-white rounded-lg outline-none bg-zinc-900"
+                                placeholder="Enter Trade Code" required="">
+                            <button type="submit"
+                                class="text-white absolute right-2.5 bottom-2.5 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 bg-yellow-500">
+                                Load
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="Toastify"></div>
+        </main>
+        <footer class="w-[100%] py-3 bg-[#101010] sticky bottom-0 left-0 border-t border-white/30 z-50">
+            <div class="mx-auto max-w-7xl flex justify-between items-center">
+                <a class="flex items-center" href="./index.html">
+                    <img alt="logo" loading="lazy" width="110" height="40" decoding="async" data-nimg="1"
+                        class="w-12 h-12" style="color:transparent" src="../images/logo.svg">
+                </a>
+                <p class="text-sm leading-5 text-white ml-2 flex-1">
+                    ©
+                    2024
+                    Grailswap by Holygrails. All
+                    rights reserved.
+                </p>
+                <div class="text-white flex items-center gap-3">
+                    <img class="ml-2 w-8 h-8" src="../images/solana.png" alt="sol">
+                    <p class="text-yellow-500 text-shadow transition-all duration-300">
+                        $
+                        108.23
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
